@@ -24,11 +24,11 @@
     </FrameLayout>
 
     <ProgressBar
+        android:id="@+id/progress"
         android:layout_width="@dimen/progress_size"
         android:layout_height="@dimen/progress_size"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/gap_24"
-        android:indeterminate="true"
-        android:indeterminateTint="@color/white" />
+        android:indeterminate="true" />
 </RelativeLayout>

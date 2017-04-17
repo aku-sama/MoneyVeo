@@ -13,7 +13,7 @@
 
     <string name="login_error_field_empty">Заполните поле</string>
     <string name="login_error_email_wrong">Неверный формат email</string>
-    <string name="login_error_password">Неверный формат поля Пароль. Пароль должен содержать не менее 6 символов, цифры и буквы.</string>
+    <string name="login_error_password">Неверный формат поля Пароль (не менее 6 символов, цифры и буквы).</string>
 
     <string name="login_aler_header">Авторизация</string>
     <string name="login_dialog_success_message">Вы успешно авторизованны в системе</string>

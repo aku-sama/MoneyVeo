@@ -11,7 +11,7 @@ import com.hannesdorfmann.mosby3.mvp.MvpBasePresenter;
 
 public class SplashPresenter extends MvpBasePresenter<ISplashView> {
 
-    public static final int SPLASH_DEFAULT_DELAY = 1500;
+    private static final int SPLASH_DEFAULT_DELAY = 2500;
 
     void initialize() {
         new Handler().postDelayed(new Runnable() {

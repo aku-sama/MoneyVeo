@@ -12,7 +12,7 @@ import ru.improvegroup.moneyveo.app.VeoApplication;
 
 public class TextInputHelper {
 
-    private static final int ERROR_SHOW_TIMEOUT = 5000;
+    private static final int ERROR_SHOW_TIMEOUT = 4000;
 
     public static void showError(final TextInputLayout layout, final int stringId) {
         layout.setErrorEnabled(true);
@@ -22,6 +22,7 @@ public class TextInputHelper {
             @Override
             public void run() {
                 layout.setError("");
+                layout.setErrorEnabled(false);
             }
         }, ERROR_SHOW_TIMEOUT);
 

@@ -43,7 +43,8 @@
             android:id="@+id/emailLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="@string/login_email_hint">
+            android:hint="@string/login_email_hint"
+            app:errorTextAppearance="@style/ErrorEditStyle">
 
             <EditText
                 android:layout_width="match_parent"
@@ -56,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/login_password_hint"
+            app:errorTextAppearance="@style/ErrorEditStyle"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/colorPrimaryDark">
 

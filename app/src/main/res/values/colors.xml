@@ -4,4 +4,8 @@
     <color name="colorPrimary">#bdc9d2</color>
     <color name="colorPrimaryDark">#59778f</color>
     <color name="colorAccent">#68b43e</color>
+
+    <color name="greenButtonPressed">#8868b43e</color>
+    <color name="buttonPressed">#F0F7FB</color>
+
 </resources>
