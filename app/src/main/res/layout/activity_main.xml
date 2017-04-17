@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/standard_horizontal_margin"
+        android:layout_marginLeft="@dimen/standard_horizontal_margin"
+        android:layout_marginRight="@dimen/standard_horizontal_margin"
+        android:layout_marginStart="@dimen/standard_horizontal_margin"
+        android:paddingTop="@dimen/gap_32"
+        android:src="@mipmap/ic_logo"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rectangle_bgr_height"
+            android:background="@mipmap/ic_background_rectangle_gray" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/art_size"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_bacground_raccoon" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/subtitleText"
+        style="@style/BodyText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/main_subtitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_vertical_margin"
+        android:layout_marginLeft="@dimen/standard_horizontal_margin"
+        android:layout_marginRight="@dimen/standard_horizontal_margin"
+        android:layout_marginStart="@dimen/standard_horizontal_margin"
+        android:layout_marginTop="@dimen/standard_vertical_margin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleText">
+
+        <Button
+            android:id="@+id/loginButton"
+            style="@style/Button.Green"
+            android:layout_width="match_parent"
+            android:text="@string/main_login_button"
+            app:layout_constraintLeft_toLeftOf="@+id/registerButton"
+            app:layout_constraintRight_toRightOf="@+id/registerButton"
+            app:layout_constraintTop_toBottomOf="@+id/subtitleText" />
+
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/Button.White"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="@dimen/gap_4"
+            android:layout_marginTop="@dimen/gap_16"
+            android:text="@string/main_register_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

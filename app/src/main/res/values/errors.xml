@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_999">Что-то пошло не так. Повторите запрос позднее.</string>
+    <string name="http_no_internet">Нет соединения с сетью</string>
+
+    <!-- 0.XX-->
+    <string name="error_0_101">This error occurs if the client cannot connect to the API.</string>
+    <string name="error_0_102">This error occurs if the client tries to connect to the API using a protocol different from the HTTPS one.</string>
+
+    <!-- 1.XX-->
+    <string name="error_1_0">Provider authorization was completed successfully.</string>
+    <string name="error_1_101">Provider authorization failed because provider authorization token is not available.</string>
+    <string name="error_1_102">Provider authorization failed because the provider was blocked. Provider cannot use the system.</string>
+    <string name="error_1_103">Provider authorization failed because the format of the entered provider authorization token is invalid.</string>
+    <string name="error_1_104">The operation requires provider authorization. You must authorize a provider before proceeding with the operation.
+    </string>
+
+    <!-- 7.XX-->
+    <string name="error_7_101">This error occurs if a user requests a document that is not available
+        or was not uploaded by them, for example, if the requested document belongs to another user.
+    </string>
+    <string name="error_7_102">This error occurs if a user was requested to upload verification
+        documents, but did not upload any of them (for example, the scanned copy of their passport)
+        and did not select the Documents sent by email option.
+    </string>
+    <!-- 2.XX-->
+    <string name="error_2_0">User was authorized by their email address.</string>
+    <string name="error_2_1">User was authorized by their mobile phone number.</string>
+    <string name="error_2_2">User was authorized by their token.</string>
+    <string name="error_2_101">User authorization failed because the provided password is invalid.
+    </string>
+    <string name="error_2_102">User authorization failed because the credentials required for
+        authorization were provided in the wrong format.
+    </string>
+    <string name="error_2_103">User authorization failed because the user with the specified
+        credentials was not registered in the system.
+    </string>
+    <string name="error_2_104">User authorization failed because the mobile phone number specified
+        during authorization
+        belongs to more than one user.
+    </string>
+    <string name="error_2_105">User authorization failed because their account is blocked.</string>
+    <string name="error_2_106">User authorization failed because the provided authorization token
+        was not found.
+    </string>
+    <string name="error_2_107">User authorization failed because the provided authorization token is
+        no longer active and cannot be used.
+    </string>
+    <string name="error_2_108">User is not authorized.</string>
+
+    <!-- 3.XX-->
+    <string name="error_3_101">This error occurs if a required parameter is missing from the request.</string>
+    <string name="error_3_102">This error occurs if the available provider/user authorization header is invalid.</string>
+    <string name="error_3_103">The requested operation cannot be performed because it is prohibited by the current workflow. For example, if a user that has a live (not closed) loan tries to apply for another one, the GeneralValidation: WorkflowValidationError occurs, because users can have only one live loan.</string>
+    <string name="error_3_104">   This error occurs if a user did not fill in all required fields or entered data is invalid and does not meet field requirements.</string>
+
+    <!-- 4.XX-->
+    <string name="error_4_101">Credit card was not found.</string>
+    <string name="error_4_102">User\'s credit card verification was completed successfully. This message is displayed to inform about successful card validation when adding a card, performing payment with 3D Secure, etc.</string>
+    <string name="error_4_103">The credit card cannot be set as a primary card because it does not belong to the user who is trying to perform this operation.</string>
+    <string name="error_4_104">The credit card cannot be selected as a primary card.</string>
+    <string name="error_4_105">Internal service problem occurred. Please contact MoneyVeo.</string>
+    <string name="error_4_106">Error on adding a credit card. The card was not added to the user\'s account.</string>
+    <string name="error_4_107">Payment was not found. This message identifies the payment status.</string>
+    <string name="error_4_108">The payment was declined by an external payment system.</string>
+    <string name="error_4_109">The number of attempts to enter the amount of money blocked during card verification was exceeded.</string>
+    <string name="error_4_110">The entered amount of money blocked during card verification is invalid.</string>
+
+    <!-- 5.XX-->
+    <string name="error_5_101">User registration failed because such user already exists.</string>
+    <string name="error_5_102">Registration of the user account was completed successfully.</string>
+
+    <!-- 6.XX-->
+
+    <string name="error_6_0">The provided promo code is valid and has been activated successfully.</string>
+    <string name="error_6_1"> The provided promo code is invalid and cannot be used.</string>
+    <string name="error_6_2">This error occurs if a user tries to apply personalized promo code while they are not authorized in the system.</string>
+    <string name="error_6_3">The provided promo code has expired and cannot be used</string>
+
+</resources>
