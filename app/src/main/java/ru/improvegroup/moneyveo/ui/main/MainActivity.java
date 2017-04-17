@@ -1,9 +1,14 @@
 package ru.improvegroup.moneyveo.ui.main;
 
+import android.app.ActivityOptions;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.util.Pair;
+import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -22,7 +27,8 @@ public class MainActivity extends GeneralActivity<IMainView, MainPresenter> impl
     Button registerButton;
     @BindView(R.id.loginButton)
     Button loginButton;
-
+    @BindView(R.id.logoImage)
+    ImageView logoImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +59,16 @@ public class MainActivity extends GeneralActivity<IMainView, MainPresenter> impl
     @OnClick(R.id.loginButton)
     @Override
     public void goToSignIn() {
-        startActivity(LoginActivity.class);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            ActivityOptions options = ActivityOptions
+                    .makeSceneTransitionAnimation(this, loginButton, "login");
+            startActivity(intent, options.toBundle());
+        } else {
+            startActivity(LoginActivity.class);
+        }
+
     }
 
 

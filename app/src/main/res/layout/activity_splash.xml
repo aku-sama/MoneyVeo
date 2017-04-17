@@ -16,6 +16,7 @@
             android:background="@mipmap/ic_background_rectangle_white" />
 
         <ImageView
+            android:id="@+id/logoImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -23,11 +24,11 @@
     </FrameLayout>
 
     <ProgressBar
-        android:indeterminateTint="@color/white"
         android:layout_width="@dimen/progress_size"
         android:layout_height="@dimen/progress_size"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/gap_24"
-        android:indeterminate="true" />
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white" />
 </RelativeLayout>

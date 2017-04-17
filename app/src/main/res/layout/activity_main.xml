@@ -75,6 +75,7 @@
             style="@style/Button.Green"
             android:layout_width="match_parent"
             android:text="@string/main_login_button"
+            android:transitionName="login"
             app:layout_constraintLeft_toLeftOf="@+id/registerButton"
             app:layout_constraintRight_toRightOf="@+id/registerButton"
             app:layout_constraintTop_toBottomOf="@+id/subtitleText" />

@@ -19,17 +19,23 @@
     <string name="login_dialog_success_message">Вы успешно авторизованны в системе</string>
     <string name="login_dialog_forget_message">Вы будете перенаправленны на страницу восстановления пароля</string>
 
+    <string name="login_no_acc_label">У вас нет аккаунта?</string>
+    <string name="login_register_button"><u>Регистрация</u></string>
+    <string name="login_toolbar">Вход в аккаунт</string>
+
     <!-- login menu -->
     <string name="menu_fill_presets">Автозаполнение формы</string>
     <string name="menu_delete_presets">Очистить форму</string>
+
+    <!--main -->
     <string name="main_subtitle">Получить онлайн кредит на Вашу карту\nстало намного проще и быстрее!</string>
     <string name="main_title">мгновенный кредит онлайн</string>
     <string name="main_login_button">войти</string>
     <string name="main_register_button">зарегистрироваться</string>
+
+    <!-- registration alert -->
     <string name="no_reg_title">Регистрация</string>
     <string name="no_reg_message">Регистрация не реализована в данной версии приложения. Вы можете зарегистрироваться на нашем сайте.</string>
-    <string name="login_no_acc_label">У вас нет аккаунта?</string>
-    <string name="login_register_button"><u>Регистрация</u></string>
-    <string name="login_toolbar">Вход в аккаунт</string>
+
 
 </resources>

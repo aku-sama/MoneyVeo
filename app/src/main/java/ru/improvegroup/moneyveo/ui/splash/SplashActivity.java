@@ -1,10 +1,16 @@
 package ru.improvegroup.moneyveo.ui.splash;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.widget.ImageView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import ru.improvegroup.moneyveo.R;
 import ru.improvegroup.moneyveo.general.GeneralActivity;
+import ru.improvegroup.moneyveo.ui.LoginActivity;
 import ru.improvegroup.moneyveo.ui.main.MainActivity;
 
 
@@ -18,6 +24,7 @@ public class SplashActivity extends GeneralActivity<ISplashView, SplashPresenter
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        ButterKnife.bind(this);
     }
 
     @NonNull
